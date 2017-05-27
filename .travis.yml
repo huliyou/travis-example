@@ -33,3 +33,6 @@ script: "echo hello"
 # after_deploy
 #
 # after_script:
+
+notifications:
+   webhooks: https://oapi.dingtalk.com/robot/send?access_token=d157405a947029defb4d9e4c3045da49304bebb5ede40b78429b5be36a0929da 
