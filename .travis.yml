@@ -1,4 +1,35 @@
 language: node_js
 node_js:
-  - "iojs"
   - "7"
+
+# apt addons
+
+# cache components
+cache:
+  directories:
+    - "node_modules"
+
+# In a before_install step, you can install additional dependencies required by your project such as Ubuntu packages or custom services.
+# before_install:
+
+install:
+  - npm install
+
+# before_script:
+
+script: "echo hello"
+
+# before_cache
+
+
+# after_success:
+#
+# after_failure:
+#
+# before_deploy
+#
+# deploy
+#
+# after_deploy
+#
+# after_script:
